@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Sol Cansat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mission ICARE</h1>
+    </header>
+    <main>
+        <section id="map-section">
+            <h2>Carte des Coordonnées GPS</h2>
+            <canvas id="gps_3d"></canvas>
+        </section>
+        <section id="data-section">
+            <div class="container">
+                <div class="column">
+                    <section id="temperature-section">
+                        <h2>Graphique de Température</h2>
+                        <canvas id="temperature-chart"></canvas>
+                    </section>
+                    <section id="humidity-section">
+                        <h2>Graphique d'humidité</h2>
+                        <canvas id="humidity-chart"></canvas>
+                    </section>
+
+                    <section id="accelerationy-section">
+                        <h2>Acceleration Y</h2>
+                        <canvas id="accelerationY-chart"></canvas>
+                    </section>
+                    <section id="speedx-section">
+                        <h2>Vitesse X</h2>
+                        <canvas id="speedX-chart"></canvas>
+                    </section>
+                    <section id="speedy-section">
+                        <h2>Vitesse Y</h2>
+                        <canvas id="speedY-chart"></canvas>
+                    </section>
+
+
+                </div>
+                <div class="column">
+                    <section id="pressure-section">
+                        <h2>Graphique de Pression</h2>
+                        <canvas id="pressure-chart"></canvas>
+                    </section>
+                    
+                    <section id="altitude-section">
+                        <h2>Altitude GPS</h2>
+                        <canvas id="altitude-chart"></canvas>
+                    </section>
+
+                                        <section id="accelerationx-section">
+                        <h2>Acceleration X</h2>
+                        <canvas id="accelerationX-chart"></canvas>
+                    </section>
+                        <section id="accelerationz-section">
+                        <h2>Acceleration Z</h2>
+                        <canvas id="accelerationZ-chart"></canvas>
+                    </section>
+                    <section id="speedz-section">
+                        <h2>Vitesse Z</h2>
+                        <canvas id="speedZ-chart"></canvas>
+                    </section>
+
+
+                </div>
+            </div>
+            <div id="altitude-chart" class="chart-container">
+                <canvas id="altitude-chart-canvas"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Réalisé par Icare &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
